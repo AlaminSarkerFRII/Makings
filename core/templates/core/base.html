@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{% block title %}{% endblock %} | makings</title>
+</head>
+<body>
+
+
+    <nav class="py-4 px-6 flex justify-between items-center border-b">
+
+        <a class="text-xl font-bold" href="/">makings</a>
+
+        <div class=" flex justify-between items-center gap-4">
+
+            <a class="text-gray-600 hover:text-gray-800 " href="#">New Items</a>
+            <a class="text-gray-600 hover:text-gray-800 " href="#">Brows</a>
+            <a class="text-gray-200 hover:text-gray-100 bg-green-800 rounded-full px-2" href="#">Sign Out</a>
+            <a class="text-gray-200 hover:text-gray-100  bg-green-800 rounded-full px-2" href="#">Login</a>
+        </div>
+
+
+
+    </nav>
+
+
+  <div>
+
+    {% block content  %}
+
+  {% endblock  %}
+
+  </div>
+</body>
+</html>
